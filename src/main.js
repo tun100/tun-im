@@ -5,7 +5,6 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 
 Vue.use(Vuex);
-Vue.use(VueRouter);
 Vue.config.productionTip = false
 
 new Vue({
