@@ -1,7 +1,11 @@
 import './less/index.less'
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router';
+import Vuex from 'vuex';
 
+Vue.use(Vuex);
+Vue.use(VueRouter);
 Vue.config.productionTip = false
 
 new Vue({
