@@ -1,6 +1,7 @@
+import VueRouter from 'vue-router';
 var value = require.context("./routes");
 console.log(value);
-
-export default {
-
-}
+const router = new VueRouter({
+  
+});
+export default router;
