@@ -1,0 +1,32 @@
+language: node_js
+# f339fede8c5a0a1e9d1d37a71260fad1d9f977ab
+# nodejs版本
+node_js: 
+    - '8'
+ 
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+ 
+ 
+# S: Build Lifecycle
+install:
+  - npm install
+ 
+before_script:
+ 
+# 无其他依赖项所以执行npm run build 构建就行了
+script:
+  - npm run build
+ 
+after_script:
+  - cd ./dist
+  - git init
+  - git add .
+  - git commit -m "SYSTEM AUTO COMMIT"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+
+branches:
+  only:
+    - master
