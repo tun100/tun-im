@@ -5,7 +5,7 @@ var ctx = require.context("./routes").keys();
 var routesList = _.chain(ctx).map(x=>{
     x = _.replace(x,/\/$/,x=>'');
     return _.split(x,'/');
-}).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).value();
+}).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
 console.log(ctx);
 debugger;
 const router = new VueRouter({
