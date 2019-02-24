@@ -36,6 +36,7 @@
       "eslint:recommended"
     ],
     "rules": {
+      "no-unused-vars":false
     },
     "parserOptions": {
       "parser": "babel-eslint"
