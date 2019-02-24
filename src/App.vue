@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>TUN - 记录站</h1>
+    <h1></h1>
   </div>
 </template>
 
