@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <h1 class="title">TUN - 记录站</h1>
-  </div>
+    <div class="container">
+        sjdflj
+        <div class="navbar">navbar</div>
+        <div class="hero">hero</div>
+        <div class="section">section</div>
+        <div class="footer">fotter</div>
+    </div>
 </template>
 <script>
 export default {
