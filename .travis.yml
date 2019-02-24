@@ -28,6 +28,7 @@ after_script:
   - git status
   - ls
   - cd ..
+  - pwd
   - cp -r ./dist/* ./dist/.* ./bckdist/
   - cd ./bckdist
   - ls
