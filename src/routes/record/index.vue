@@ -14,7 +14,8 @@
     </div>
     <footer class="footer tun-footer">
       <div class="content has-text-centered">
-        <p>本网站所有源码已上传至
+        <p>
+          本网站所有源码已上传至
           <a target="_blank" href="https://github.com/tun100/tun-im">Github仓库</a>里，并搭配Travis自动构建工具实时持续部署
         </p>
       </div>
@@ -32,7 +33,7 @@ export default {
   },
   computed: {
     tablist() {
-      return _.map(["前端JS", "后端Java", "Linux"], x => {
+      return _.map(["JavaScript", "Java", "Linux", "计算机网络"], x => {
         return {
           label: x,
           value: x
