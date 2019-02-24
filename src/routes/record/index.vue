@@ -9,7 +9,7 @@
         </div>
       </div>
     </section>
-    <div class="section tun-nopd">
+    <div class="section tun-nopd tun-tab-wrapper">
       <TunTabs :list="tablist"></TunTabs>
     </div>
     <footer class="footer tun-footer">
