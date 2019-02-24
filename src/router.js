@@ -7,8 +7,7 @@ var {getPathDirList} = utils;
 Vue.use(VueRouter)
 
 const IndexPath = 'record'
-var ctxpath = './routes'
-var pathDirList = getPathDirList(ctxpath);
+var pathDirList = getPathDirList(require.context('./routes'));
 var routes = _.chain(pathDirList)
 	.map(x => {
   var { patharr, basedir, cptpath, cpt } = x

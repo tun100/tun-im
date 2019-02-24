@@ -1,11 +1,7 @@
 import _ from 'lodash';
 
-function getPathDirList (ctxpath) {
-    debugger;
-    var ctx = require.context(ctxpath);
+function getPathDirList (ctx) {
     var keys = ctx.keys();
-    var ctx = f=>f;
-    var keys = [];
     var pathDirList = _.chain(keys)
         .map(x => {
             x = _.replace(x, /\/$/, x => '');
