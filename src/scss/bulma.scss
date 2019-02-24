@@ -2,6 +2,9 @@
     font-family: tunfont100;
     src: url('./fonts/fangzheng.ttf');
 }
+body{
+    font-family: tunfont100!important;
+}
 
 @import 'bulma/sass/utilities/_all.sass';
 @import 'bulma/sass/base/_all.sass';
