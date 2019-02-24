@@ -34,7 +34,6 @@ after_script:
   - cd ./dist
   - git status
   - pwd
-  - git status
   - git log
   - git add .
   - git commit -m "SYSTEM AUTO COMMIT"
