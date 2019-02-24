@@ -10,7 +10,6 @@
       </div>
     </section>
     <div class="section tun-nopd tun-tab-wrapper">
-      <div v-for="(x,d) in querylist" :slot="d" :key="d">{{d}}</div>
       <TunTabs :list="tablist">
         <div v-for="(x,d) in querylist" :slot="d" :key="d">
           <TunTable v-bind="x"/>
