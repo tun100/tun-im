@@ -10,7 +10,11 @@
       </div>
     </section>
     <div class="section tun-nopd tun-tab-wrapper">
-      <TunTabs :list="tablist"></TunTabs>
+      <TunTabs :list="tablist">
+        <div slot="JS前端">
+          js  
+        </div>
+      </TunTabs>
     </div>
     <footer class="footer tun-footer">
       <div class="content has-text-centered">
