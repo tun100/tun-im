@@ -1,6 +1,6 @@
 <template>
   <div class="tun-tabs-wrapper">
-    <div class="tabs tun-clearmb">
+    <div class="tabs tun-nomb">
       <ul>
         <li
           @click="tmpactive = x.value"
