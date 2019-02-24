@@ -12,7 +12,7 @@
     <div class="section tun-nopd tun-tab-wrapper">
       <TunTabs :list="tablist">
         <div v-for="(x,d) in querylist" :slot="d" :key="d">
-          <TunTable v-bind="x" />
+          <TunTable v-bind="x"/>
         </div>
       </TunTabs>
     </div>
