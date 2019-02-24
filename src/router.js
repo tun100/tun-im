@@ -7,8 +7,7 @@ var routesList = _.chain(keys).map(x=>{
     x = _.replace(x,/\/$/,x=>'');
     return _.split(x,'/');
 }).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
-console.log(routesList);
-// debugger;
+debugger;
 const router = new VueRouter({
   
 });

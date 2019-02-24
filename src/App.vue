@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>TUN</h1>
+    
   </div>
 </template>
 
