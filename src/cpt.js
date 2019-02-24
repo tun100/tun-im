@@ -1,5 +1,5 @@
 export default {
-    'tun-tabs':{
+    'TunTabs':{
         template: '<div>sjdf</div>'
     }
 }
