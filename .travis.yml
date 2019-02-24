@@ -22,12 +22,13 @@ script:
 after_script:
   - mkdir ./bckdist
   - cd ./dist
-  - mv .* * ../bckdist
   - git init
   - git remote add origin https://${GH_REF}
   - git pull origin master
-  - mv ../bckdist/.* ../bckdist/* .
+  - git status
   - ls
+  - cd ..
+  - cp -r dist/* list/
   - git add .
   - git commit -m "SYSTEM AUTO COMMIT"
   - git log
