@@ -8,7 +8,16 @@ var routesList = _.chain(keys).map(x=>{
     return _.split(x,'/');
 }).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
 debugger;
-var routes = {};
+var routes = _.chain(routesList).map(x=>{
+    var patharr = _.split(x,'/');
+    var basedir = patharr[1];
+    var cptpath = x + '/index.vue';
+    return {
+        component: ctx(cptpath),
+        name: basedir,
+        path: basedir
+    }
+}).value();
 const router = new VueRouter({
  routes 
 });

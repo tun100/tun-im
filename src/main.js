@@ -7,13 +7,15 @@ import _ from 'lodash';
 import moment from 'moment';
 import flag from './flag'
 
-if(flag.isDev()){
-  window._ = _;
-  window.moment = moment;
-}
-
-new Vue({
+var vm = new Vue({
   render: h => h(App),
   router,
   store,
 }).$mount('#app');
+
+if(flag.isDev()){
+  window._ = _;
+  window.moment = moment;
+  window.vm = vm;
+}
+
