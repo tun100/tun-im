@@ -13,7 +13,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          本网站所有源码已上传至<a href="https://github.com/tun100/tun-im">Github仓库</a>里
+          本网站所有源码已上传至<a href="https://github.com/tun100/tun-im">Github仓库</a>里，搭配Travis自动构建工具实时持续部署
         </p>
       </div>
     </footer>
