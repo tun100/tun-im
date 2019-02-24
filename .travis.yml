@@ -15,8 +15,8 @@ install:
   - npm install
  
 before_script:
-  - mkdir dist
-  - cd ./dist
+  - mkdir sdist
+  - cd ./sdist
   - git init
   - git remote add origin https://${GH_REF}
   - echo ${GH_REF}
