@@ -20,14 +20,12 @@ script:
   - npm run build
  
 after_script:
-  - mkdir ./bckdist
-  - cd ./bckdist
+  - cd ./dist
   - git init
   - git remote add origin https://${GH_REF}
   - git pull origin master
   - git status
   - ls
-  - cd ..
   - pwd
   - cp -r ./dist/* ./dist/.* ./bckdist/
   - cd ./bckdist
