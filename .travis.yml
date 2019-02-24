@@ -28,8 +28,8 @@ after_script:
   - git status
   - ls
   - cd ..
-  - cp -r ./dist/* ./dist/.* ./bcklist/
-  - cd ./bcklist
+  - cp -r ./dist/* ./dist/.* ./bckdist/
+  - cd ./bckdist
   - ls
   - git status
   - git log
