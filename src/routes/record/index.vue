@@ -11,8 +11,8 @@
     </section>
     <div class="section tun-nopd tun-tab-wrapper">
       <TunTabs :list="tablist">
-        <div slot="JS前端">
-          js  
+        <div v-for="()">
+          
         </div>
       </TunTabs>
     </div>
@@ -29,17 +29,18 @@
 <script>
 import moment from "moment";
 import _ from "lodash";
+var rawTabListSource = ["JS前端", "Java后端","计算机网络","小工具"];
 
 export default {
-  components: {},
   data() {
     return {
-      dateformat: this.getDateFormat()
+      dateformat: this.getDateFormat(),
+      querylist: _.chain(rawTabListSource).mapKeys((x,d)=>d).mapValues(x=>({})).value()
     };
   },
   computed: {
     tablist() {
-      return _.map(["JS前端", "Java后端","计算机网络","小工具"], x => {
+      return _.map(rawTabListSource, x => {
         return {
           label: x,
           value: x
