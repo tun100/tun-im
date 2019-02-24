@@ -31,7 +31,7 @@ var routes = _.chain(pathStrList).map(x=>{
         ]
     }
     return result;
-}).value();
+}).flattenDeep().value();
 const router = new VueRouter({
  routes 
 });
