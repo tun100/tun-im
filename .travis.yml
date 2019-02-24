@@ -20,10 +20,14 @@ script:
   - npm run build
  
 after_script:
+  - mkdir ./bckdist
   - cd ./dist
+  - mv .* * ../bckdist
   - git init
   - git remote add origin https://${GH_REF}
   - git pull origin master
+  - mv ../bckdist/.* ../bckdist/* .
+  - ls
   - git add .
   - git commit -m "SYSTEM AUTO COMMIT"
   - git log
