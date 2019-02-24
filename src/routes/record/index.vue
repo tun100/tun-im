@@ -4,7 +4,7 @@
     <section class="hero is-dark">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">记录我的工作与生活</h1>
+          <h1 class="title">记录下我的工作与生活</h1>
           <h2 class="subtitle">今天是{{dateformat}} 广州 晴</h2>
         </div>
       </div>
