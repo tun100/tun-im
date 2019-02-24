@@ -9,7 +9,7 @@
         </div>
       </div>
     </section> 
-    <div class="section">section</div>
+    <div class="section tun-nopd">section</div>
     <div class="footer">fotter</div>
   </div>
 </template>
