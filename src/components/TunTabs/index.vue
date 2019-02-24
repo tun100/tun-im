@@ -12,6 +12,9 @@
         </li>
       </ul>
     </div>
+    <slot :name="x.value" v-show="x.value == active" v-for="(x,d) in list" :key="d">
+        
+    </slot>
   </div>
 </template>
 <script>
