@@ -32,13 +32,18 @@ script:
  
 after_script:
   - cd ./dist
+  - cp -r ../sdist/.git/ ./.git/
+  - ls . -ahl
   - git status
   - pwd
+  - ls
   - git log
   - git add .
   - git commit -m "SYSTEM AUTO COMMIT"
   - git log
   - git push --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - cat /etc/issue
+  - rsync
 # - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
 branches:
   only:
