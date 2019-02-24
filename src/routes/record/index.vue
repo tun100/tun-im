@@ -10,6 +10,9 @@
       </div>
     </section>
     <div class="section tun-nopd tun-tab-wrapper">
+        <div v-for="(x,d) in querylist" :slot="d" :key="d">
+           {{d}}
+        </div>
       <TunTabs :list="tablist">
         <div v-for="(x,d) in querylist" :slot="d" :key="d">
           <TunTable v-bind="x"/>
@@ -39,7 +42,7 @@ export default {
       querylist: _.chain(rawTabListSource)
         .mapKeys((x, d) => d)
         .mapValues(x => ({
-          column: _.map(["记录名称", "记录描述", "添加日期", "操作"]),
+          column: _.map(['记录类型',"记录名称", "记录描述", "添加日期", "操作"],x=>({label:x,value:x})),
           data: [],
           ctn: 0
         }))
