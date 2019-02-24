@@ -1,5 +1,6 @@
 @font-face{
-    url: "./fonts/terminus.ttf"
+    src: "./fonts/terminus.ttf";
+    font-family: 'tun100font';
 }
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/base/_all.sass";
