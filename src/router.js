@@ -14,7 +14,9 @@ var routes = _.chain(pathStrList).map(x=>{
     var cpt = ctx(cptpath).default;
     console.log(cpt);
     return {
-        component: cpt,
+        component: {
+            template: '<div>testnow</div>'
+        },
         name: basedir,
         path: '/'+basedir
     }
