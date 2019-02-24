@@ -14,7 +14,7 @@ var routes = _.chain(pathStrList).map(x=>{
     return {
         component: ctx(cptpath),
         name: basedir,
-        path: basedir
+        path: '/'+basedir
     }
 }).value();
 
