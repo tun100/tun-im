@@ -22,6 +22,7 @@ before_script:
   - git pull origin master
   - ls 
   - pwd
+  - git status
   - cd ..
   - pwd
  
