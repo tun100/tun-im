@@ -8,12 +8,14 @@
 export default {
   name: 'app',
   components: {
+  },
+  methods: {
+    sovalue(){}
   }
 }
 </script>
 
 <style>
-
 #app{
   text-align:center;
 }
