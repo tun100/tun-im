@@ -1,13 +1,16 @@
-@font-face{
-    src: "./fonts/terminus.ttf";
-    font-family: 'tun100font';
+@font-face {
+	src: './fonts/terminus.ttf';
+	font-family: 'tun100font';
 }
-@import "bulma/sass/utilities/_all.sass";
-@import "bulma/sass/base/_all.sass";
-@import "bulma/sass/elements/button.sass";
-@import "bulma/sass/elements/container.sass";
-@import "bulma/sass/elements/form.sass";
-@import "bulma/sass/elements/title.sass";
-@import "bulma/sass/components/navbar.sass";
-@import "bulma/sass/layout/hero.sass";
-@import "bulma/sass/layout/section.sass";
+body {
+	font-family: tun100font;
+}
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/base/_all.sass';
+@import 'bulma/sass/elements/button.sass';
+@import 'bulma/sass/elements/container.sass';
+@import 'bulma/sass/elements/form.sass';
+@import 'bulma/sass/elements/title.sass';
+@import 'bulma/sass/components/navbar.sass';
+@import 'bulma/sass/layout/hero.sass';
+@import 'bulma/sass/layout/section.sass';
