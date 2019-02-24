@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="navbar tun-navbar">tun.im</div>
-    <section class="hero is-primary">
+    <section class="hero is-dark">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">Hero title</h1>
