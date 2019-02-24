@@ -7,7 +7,6 @@ var routesList = _.chain(keys).map(x=>{
     x = _.replace(x,/\/$/,x=>'');
     return _.split(x,'/');
 }).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
-debugger;
 var routes = _.chain(routesList).map(x=>{
     var patharr = _.split(x,'/');
     var basedir = patharr[1];
@@ -18,7 +17,9 @@ var routes = _.chain(routesList).map(x=>{
         path: basedir
     }
 }).value();
+
 const router = new VueRouter({
  routes 
 });
+
 export default router;
