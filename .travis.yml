@@ -19,6 +19,7 @@ before_script:
   - cd ./dist
   - git init
   - git remote add origin https://${GH_REF}
+  - echo ${GH_REF}
   - git pull origin master
   - ls 
   - pwd
