@@ -1,17 +1,14 @@
 <template>
     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
-            <th>
-                <td v-for="(cx,cd) in column" :key="cd">{{cx.label}}</td>
-            </th>
+                <th v-for="(cx,cd) in column" :key="cd">{{cx.label}}</th>
         </thead>
-        <!-- <tbody v-if="!isDataEmpty">
+        <tbody v-if="!isDataEmpty">
             <tr v-for="(x,d) in data" :key="d">
                 <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
             </tr>
-        </tbody> -->
-        {{column}}
-        <tbody>
+        </tbody>
+        <tbody v-else>
             <tr v-for="(x,d) in 1" :key="d" >
                 <td v-for="(cx,cd) in column" :key="cd">kon</td>
             </tr>
