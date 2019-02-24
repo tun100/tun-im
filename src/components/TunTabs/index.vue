@@ -2,17 +2,8 @@
   <div class="tun-tabs-wrapper">
     <div class="tabs">
       <ul>
-        <li :class="" v-for="(x,d) in list" :key="d">
-          <a>Pictures</a>
-        </li>
-        <li>
-          <a>Music</a>
-        </li>
-        <li>
-          <a>Videos</a>
-        </li>
-        <li>
-          <a>Documents</a>
+        <li @click="tmpactive = x.value" :class="x.value == active ? 'is-active':''" v-for="(x,d) in list" :key="d">
+          <a>{{x.label}}</a>
         </li>
       </ul>
     </div>
@@ -20,6 +11,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      _active: -1
+    };
+  },
   props: {
     list: {}
   }
