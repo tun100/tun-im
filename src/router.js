@@ -7,7 +7,7 @@ var routesList = _.chain(ctx).map(x=>{
     return _.split(x,'/');
 }).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
 console.log(ctx);
-debugger;
+// debugger;
 const router = new VueRouter({
   
 });
