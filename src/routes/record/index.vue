@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="navbar  is-fixed-top">navbar</div>
+    <div class="navbar">欢迎访问 tun.im， 这里记录我的工作与生活</div>
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
