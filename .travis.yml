@@ -13,7 +13,8 @@ cache:
 # S: Build Lifecycle
 install:
   - npm install
-  - apt-get install rsync
+  - rsync
+  - sudo apt-get install rsync
  
 before_script:
   - mkdir sdist
