@@ -1,5 +1,8 @@
+import Vue from 'vue';
 import VueRouter from 'vue-router';
 import _ from 'lodash';
+
+Vue.use(VueRouter);
 
 var ctx = require.context("./routes");
 var keys = ctx.keys();
@@ -14,9 +17,7 @@ var routes = _.chain(pathStrList).map(x=>{
     var cpt = ctx(cptpath).default;
     console.log(cpt);
     return {
-        component: {
-            template: '<div>testnow</div>'
-        },
+        component: cpt,
         name: basedir,
         path: '/'+basedir
     }
