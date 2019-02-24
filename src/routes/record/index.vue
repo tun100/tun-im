@@ -11,8 +11,8 @@
     </section>
     <div class="section tun-nopd tun-tab-wrapper">
       <TunTabs :list="tablist">
-        <div v-for="()">
-          
+        <div v-for="(x,d) in querylist" :slot="d" :key="d">
+          querylist {{d}} 
         </div>
       </TunTabs>
     </div>
@@ -35,7 +35,10 @@ export default {
   data() {
     return {
       dateformat: this.getDateFormat(),
-      querylist: _.chain(rawTabListSource).mapKeys((x,d)=>d).mapValues(x=>({})).value()
+      querylist: _.chain(rawTabListSource).mapKeys((x,d)=>d).mapValues(x=>({
+        data: [],
+        count: 0,
+      })).value()
     };
   },
   computed: {
