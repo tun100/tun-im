@@ -3,11 +3,11 @@ import _ from 'lodash';
 
 var ctx = require.context("./routes");
 var keys = ctx.keys();
-var routesList = _.chain(keys).map(x=>{
+var pathStrList = _.chain(keys).map(x=>{
     x = _.replace(x,/\/$/,x=>'');
     return _.split(x,'/');
 }).filter(x=>_.size(x) == 2).map(x=>_.join(x,'/')).uniq().value();
-var routes = _.chain(routesList).map(x=>{
+var routes = _.chain(pathStrList).map(x=>{
     var patharr = _.split(x,'/');
     var basedir = patharr[1];
     var cptpath = x + '/index.vue';
