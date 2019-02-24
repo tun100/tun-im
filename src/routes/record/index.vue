@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="navbar">tun.im</div>
+    <div class="navbar tun-navbar">tun.im</div>
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
