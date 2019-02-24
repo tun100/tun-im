@@ -11,8 +11,9 @@ var routes = _.chain(pathStrList).map(x=>{
     var patharr = _.split(x,'/');
     var basedir = patharr[1];
     var cptpath = x + '/index.vue';
+    var cpt = ctx(cptpath);
     return {
-        component: ctx(cptpath),
+        component: cpt,
         name: basedir,
         path: '/'+basedir
     }
