@@ -1,11 +1,11 @@
-@tun_navbar_bg:#4ba391;
+@tun_navbar_bg=#4ba391;
 .tun-navbar{
         align-items: center;
     padding: 0 17px;
     border: 1px solid #4ba391;
     border-bottom: none;
     border-top: none;
-    background: @tun_navbar_bg;
+    background: ${tun_navbar_bg};
     color: white;
     font-size: 22px;
 }
