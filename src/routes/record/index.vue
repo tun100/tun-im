@@ -16,7 +16,7 @@
       <div class="content has-text-centered">
         <p>
           本网站所有源码已上传至
-          <a target="_blank" href="https://github.com/tun100/tun-im">Github仓库</a>里，并使用travis实现自动持续部署。
+          <a target="_blank" href="https://github.com/tun100/tun-im">Github仓库</a>里，使用了bulma的CSS框架以及<a target="_blank" href="https://github.com/tun100/tun-im/blob/master/package.json">相关依赖<a/>，并使用travis实现自动持续部署。
         </p>
       </div>
     </footer>
