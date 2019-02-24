@@ -5,11 +5,14 @@
                 <td v-for="(cx,cd) in column" :key="cd">{{cx.label}}</td>
             </th>
         </thead>
-        <tbody>
+        <!-- <tbody v-if="!isDataEmpty">
             <tr v-for="(x,d) in data" :key="d">
                 <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
             </tr>
-            <tr v-for="(x,d) in createIfDataIsEmpty" :key="d" >
+        </tbody> -->
+        {{column}}
+        <tbody>
+            <tr v-for="(x,d) in 1" :key="d" >
                 <td v-for="(cx,cd) in column" :key="cd">kon</td>
             </tr>
         </tbody>
@@ -24,8 +27,8 @@ export default {
         ctn: {}
     },
     computed:{
-        createIfDataIsEmpty(){
-            return _.isEmpty(this.data) ? 1:0;
+        isDataEmpty(){
+            return _.isEmpty(this.data);
         }
     }
 };
