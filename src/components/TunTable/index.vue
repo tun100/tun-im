@@ -9,6 +9,9 @@
             <tr v-for="(x,d) in data" :key="d">
                 <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
             </tr>
+            <tr v-for="(x,d) in 1" :key="d" v-if="data.length == 0">
+                <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
+            </tr>
         </tbody>
     </table>
 </template>
