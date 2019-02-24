@@ -15,21 +15,22 @@ install:
   - npm install
  
 before_script:
+  - cd ./dist
+  - git init
+  - git remote add origin https://${GH_REF}
+  - git pull origin master
+  - ls 
+  - pwd
+  - cd ..
+  - pwd
  
 script:
   - npm run build
  
 after_script:
   - cd ./dist
-  - git init
-  - git remote add origin https://${GH_REF}
-  - git pull origin master
   - git status
-  - ls
   - pwd
-  - cp -r ./dist/* ./dist/.* ./bckdist/
-  - cd ./bckdist
-  - ls
   - git status
   - git log
   - git add .
