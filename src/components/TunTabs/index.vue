@@ -12,7 +12,7 @@
         </li>
       </ul>
     </div>
-    <slot :name="x.value"  v-for="(x,d) in list">
+    <slot :name="x.value" v-for="(x,d) in list">
       <div v-show="x.value == active" :key="d">"{{x.label}}" 当前空空如也...</div>
     </slot>
   </div>
@@ -29,15 +29,22 @@ export default {
   computed: {
     active() {
       var { tmpactive } = this;
-      if (
-        _.isNil(tmpactive) ||
-        _.isNil(_.find(this.list, x => x.value == tmpactive))
-      ) {
-        if (!_.isEmpty(this.list)) {
-          tmpactive = this.tmpactive = _.get(this, ["list", 0, "value"]);
+      return tmpactive;
+    }
+  },
+  watch: {
+    tmpactive: {
+      immediate: true,
+      handler(tmpactive) {
+        if (
+          _.isNil(tmpactive) ||
+          _.isNil(_.find(this.list, x => x.value == tmpactive))
+        ) {
+          if (!_.isEmpty(this.list)) {
+            tmpactive = this.tmpactive = _.get(this, ["list", 0, "value"]);
+          }
         }
       }
-      return tmpactive;
     }
   },
   props: {
