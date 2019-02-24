@@ -6,8 +6,10 @@ import store from './store.js';
 import _ from 'lodash';
 import moment from 'moment';
 import flag from './flag'
+import cpt from './cpt';
 
 var vm = new Vue({
+  components: cpt,
   render: h => h(App),
   router,
   store,
