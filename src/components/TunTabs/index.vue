@@ -13,7 +13,7 @@
       </ul>
     </div>
     <slot :name="x.value" v-for="(x,d) in list">
-      <div v-show="x.value == active" :key="d">"{{x.label}}" 当前空空如也...</div>
+      <div class="tun-tabs-item" v-show="x.value == active" :key="d">"{{x.label}}" 当前空空如也...</div>
     </slot>
   </div>
 </template>
