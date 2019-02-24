@@ -31,7 +31,7 @@ export default {
   },
   computed:{
       tablist(){
-          return _.map(['前端','后端','Linux'],x=>{
+          return _.map(['前端JS','后端Java','Linux'],x=>{
               return {
                   label: x,
                   value: x
