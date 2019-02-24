@@ -13,8 +13,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>本网页</strong> 已上传至
-          <a href="https://github.com/tun100/tun-im">tun100的Github仓库</a>里
+          本网站所有源码已上传至<a href="https://github.com/tun100/tun-im">Github仓库</a>里
         </p>
       </div>
     </footer>
