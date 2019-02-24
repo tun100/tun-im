@@ -20,7 +20,8 @@
       <div class="content has-text-centered">
         <p>
           本网站所有源码已同步至
-          <a target="_blank" href="https://github.com/tun100/tun-im">Github仓库</a>里，使用了bulma的CSS框架以及<a target="_blank" href="https://github.com/tun100/tun-im/blob/master/package.json">相关依赖</a>，并采用travis实现自动持续部署。
+          <a target="_blank" href="https://github.com/tun100/tun-im">Github仓库</a>里，使用了bulma的CSS框架以及
+          <a target="_blank" href="https://github.com/tun100/tun-im/blob/master/package.json">相关依赖</a>，并采用travis实现自动持续部署。
         </p>
       </div>
     </footer>
@@ -29,16 +30,20 @@
 <script>
 import moment from "moment";
 import _ from "lodash";
-var rawTabListSource = ["JS前端", "Java后端","计算机网络","小工具"];
+var rawTabListSource = ["JS前端", "Java后端", "计算机网络", "小工具"];
 
 export default {
   data() {
     return {
       dateformat: this.getDateFormat(),
-      querylist: _.chain(rawTabListSource).mapKeys((x,d)=>d).mapValues(x=>({
-        data: [],
-        ctn: 0
-      })).value()
+      querylist: _.chain(rawTabListSource)
+        .mapKeys((x, d) => d)
+        .mapValues(x => ({
+          column: _.map(["记录名称", "记录描述", "添加日期", "操作"]),
+          data: [],
+          ctn: 0
+        }))
+        .value()
     };
   },
   computed: {
