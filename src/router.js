@@ -5,7 +5,8 @@ import _ from 'lodash';
 Vue.use(VueRouter);
 
 const IndexPath = 'record';
-var ctx = require.context("./routes");
+var ctxpath = "./routes";
+var ctx = require.context(ctxpath);
 var keys = ctx.keys();
 var pathStrList = _.chain(keys).map(x=>{
     x = _.replace(x,/\/$/,x=>'');
