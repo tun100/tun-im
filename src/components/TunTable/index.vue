@@ -10,7 +10,7 @@
         </tbody>
         <tbody v-else>
             <tr v-for="(x,d) in 1" :key="d" >
-                <td v-for="(cx,cd) in column" :key="cd">k</td>
+                <td v-for="(cx,cd) in column" :key="cd"><span class="tun-invisible">无</span></td>
             </tr>
         </tbody>
     </table>
@@ -31,5 +31,5 @@ export default {
 };
 </script>
 <style lang="sass">
-    
+ 
 </style>

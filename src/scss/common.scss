@@ -9,8 +9,8 @@ $tun_nav_bg: lighten($dark, 10%);
 	background: $tun_nav_bg;
 	color: white;
 	font-size: 22px;
-    font-weight: bold;
-    display:flex;
+	font-weight: bold;
+	display: flex;
 }
 
 .tun-nopd {
@@ -23,4 +23,8 @@ $tun_nav_bg: lighten($dark, 10%);
 
 .tun-nomb {
 	margin-bottom: 0;
+}
+
+.tun-invisible {
+	visibility: hidden;
 }
