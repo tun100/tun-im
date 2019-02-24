@@ -1,5 +1,4 @@
-export default {
-    'TunTabs':{
-        template: '<div>sjdf</div>'
-    }
-}
+import Vue from 'vue';
+
+
+export default {}

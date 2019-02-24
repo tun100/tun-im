@@ -9,7 +9,6 @@ import flag from './flag'
 import cpt from './cpt';
 
 var vm = new Vue({
-  components: cpt,
   render: h => h(App),
   router,
   store,
