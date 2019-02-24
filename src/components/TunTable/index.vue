@@ -10,7 +10,7 @@
                 <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
             </tr>
             <tr v-for="(x,d) in createIfDataIsEmpty" :key="d" >
-                <td v-for="(cx,cd) in column" :key="cd">{{data[cx.value]}}</td>
+                <td v-for="(cx,cd) in column" :key="cd">kon</td>
             </tr>
         </tbody>
     </table>
