@@ -1,4 +1,7 @@
+import _ from 'lodash';
+
 function getPathDirList (ctxpath) {
+    debugger;
     var ctx = require.context(ctxpath);
     var keys = ctx.keys();
     var pathDirList = _.chain(keys)
