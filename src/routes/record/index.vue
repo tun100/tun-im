@@ -4,8 +4,8 @@
     <section class="hero is-dark">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">爱技术，爱钻研，记录下每刻学习历程</h1>
-          <h2 class="subtitle">报时:今天是2019年12月10日</h2>
+          <h1 class="title">热爱技术，记录下每刻学习历程</h1>
+          <h2 class="subtitle">今天是2019年12月10日 广州 晴</h2>
         </div>
       </div>
     </section> 
