@@ -15,11 +15,21 @@ var routes = _.chain(pathStrList).map(x=>{
     var basedir = patharr[1];
     var cptpath = x + '/index.vue';
     var cpt = ctx(cptpath).default;
-    return {
+    var result  = {
         component: cpt,
         name: basedir,
         path: '/'+basedir
     }
+    if(basedir == 'record'){
+        return [
+            result,
+            {
+                ...result,
+                path: '/'
+            }
+        ]
+    }
+    return result;
 }).value();
 const router = new VueRouter({
  routes 
