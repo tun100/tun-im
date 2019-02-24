@@ -8,29 +8,39 @@
           <h2 class="subtitle">今天是{{dateformat}} 广州 晴</h2>
         </div>
       </div>
-    </section> 
+    </section>
     <div class="section tun-nopd">section</div>
-    <div class="footer">fotter</div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>tun.im</strong> by
+          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
-import moment from 'moment';
+import moment from "moment";
 export default {
-    data(){
-        return {
-            dateformat: this.getDateFormat()
-        }
-    },
-    created(){
-        setInterval(()=>{
-            this.dateformat = this.getDateFormat();
-        },1000);
-    },
-    methods: {
-        getDateFormat(){
-            return moment().format("YYYY-MM-DD") ;
-        }
+  data() {
+    return {
+      dateformat: this.getDateFormat()
+    };
+  },
+  created() {
+    setInterval(() => {
+      this.dateformat = this.getDateFormat();
+    }, 1000);
+  },
+  methods: {
+    getDateFormat() {
+      return moment().format("YYYY-MM-DD");
     }
+  }
 };
 </script>
 <style>
