@@ -10,7 +10,7 @@
         </tbody>
         <tbody v-else>
             <tr v-for="(x,d) in 1" :key="d" >
-                <td v-for="(cx,cd) in column" :key="cd">kon</td>
+                <td v-for="(cx,cd) in column" :key="cd">k</td>
             </tr>
         </tbody>
     </table>
