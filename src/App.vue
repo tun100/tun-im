@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <router-view></router-view>
+    <h1>TUN - 记录站</h1>
   </div>
 </template>
 
@@ -14,5 +14,7 @@ export default {
 </script>
 
 <style>
-
+#app{
+  text-align:center;
+}
 </style>
