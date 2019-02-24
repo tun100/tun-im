@@ -4,6 +4,7 @@ import _ from 'lodash';
 
 Vue.use(VueRouter);
 
+const IndexPath = 'record';
 var ctx = require.context("./routes");
 var keys = ctx.keys();
 var pathStrList = _.chain(keys).map(x=>{
@@ -20,7 +21,7 @@ var routes = _.chain(pathStrList).map(x=>{
         name: basedir,
         path: '/'+basedir
     }
-    if(basedir == 'record'){
+    if(basedir == IndexPath){
         return [
             result,
             {
