@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        sjdflj
         <div class="navbar">navbar</div>
         <div class="hero">hero</div>
         <div class="section">section</div>
