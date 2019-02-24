@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     tablist() {
-      return _.map(["JavaScript", "Java", "Linux", "计算机网络"], x => {
+      return _.map(["JavaScript前端", "Java后端","Linux","计算机网络",], x => {
         return {
           label: x,
           value: x
