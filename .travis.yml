@@ -32,8 +32,8 @@ script:
   - npm run build
  
 after_script:
-  - cd ./dist
-  - cp -r ../sdist/.git/ ./.git/
+  - rsync -avz ./dist/ ./sdist/
+  - cd ./sdist
   - ls . -ahl
   - git status
   - pwd
