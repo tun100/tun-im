@@ -7,6 +7,7 @@ import _ from 'lodash';
 import moment from 'moment';
 import flag from './flag'
 import cpt from './cpt';
+import './directive';
 
 var vm = new Vue({
   render: h => h(App),

@@ -9,7 +9,7 @@
         </div>
       </div>
     </section>
-    <div class="section tun-nopd tun-tab-wrapper">
+    <div class="section tun-nopd tun-tab-wrapper" v-autosize>
       <TunTabs :list="tablist"></TunTabs>
     </div>
     <footer class="footer tun-footer">
