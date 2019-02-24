@@ -1,6 +1,5 @@
 @import 'bulma/bulma.sass';
 
-
 @font-face {
 	font-family: tunfont100;
 	src: url('./fonts/fangzheng.ttf');
@@ -14,6 +13,10 @@ textarea {
 	font-family: tunfont100 !important;
 }
 
-html{
-    overflow:auto;
+html {
+	overflow: auto;
+}
+
+.tabs:not(:last-child){
+    margin-bottom: 0;
 }
