@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      _active: -1
+      tmpactive: undefined
     };
   },
   props: {
