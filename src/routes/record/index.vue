@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="navbar">navbar</div>
-    <section class="hero">
+    <div class="navbar  is-fixed-top">navbar</div>
+    <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">Hero title</h1>
