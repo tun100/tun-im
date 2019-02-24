@@ -2,7 +2,8 @@ import _ from 'lodash';
 
 /**
  * 
- * @param {*} ctx 是传递 require.context的结果，因为webpack
+ * @param {*} ctx 是传递 require.context的返回值。
+ * 无法直接在该函数内直接传形参，因为webpack
  * 是预编译形式，除非先require.context(./)，列出所有的模块
  * 但是可能会导致编译效率多了不必要的扫描
  */

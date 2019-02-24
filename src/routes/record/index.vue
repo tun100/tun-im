@@ -10,12 +10,12 @@
       </div>
     </section>
     <div class="section tun-nopd">
-       <TunTabs :list="tablist"></TunTabs>
+      <TunTabs :list="tablist"></TunTabs>
     </div>
     <footer class="footer tun-footer">
       <div class="content has-text-centered">
-        <p>
-          本网站所有源码已上传至<a href="https://github.com/tun100/tun-im">Github仓库</a>里，搭配Travis自动构建工具实时持续部署
+        <p>本网站所有源码已上传至
+          <a href="https://github.com/tun100/tun-im">Github仓库</a>里，搭配Travis自动构建工具实时持续部署
         </p>
       </div>
     </footer>
@@ -24,26 +24,21 @@
 <script>
 import moment from "moment";
 export default {
-    components:{
-        // "TunTabs":{
-        //     name: "TunTabs",
-        //     template:"<div>jfklsdf</div>"
-        // }
-    },
+  components: {},
   data() {
     return {
-      dateformat: this.getDateFormat(),
+      dateformat: this.getDateFormat()
     };
   },
-  computed:{
-      tablist(){
-          return _.map(['前端JS','后端Java','Linux'],x=>{
-              return {
-                  label: x,
-                  value: x
-              }
-          });
-      }
+  computed: {
+    tablist() {
+      return _.map(["前端JS", "后端Java", "Linux"], x => {
+        return {
+          label: x,
+          value: x
+        };
+      });
+    }
   },
   created() {
     setInterval(() => {
