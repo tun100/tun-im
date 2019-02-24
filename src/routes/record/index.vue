@@ -10,7 +10,7 @@
       </div>
     </section>
     <div class="section tun-nopd">
-        
+       <TunTabs :list="tablist"></TunTabs>
     </div>
     <footer class="footer tun-footer">
       <div class="content has-text-centered">
@@ -26,8 +26,18 @@ import moment from "moment";
 export default {
   data() {
     return {
-      dateformat: this.getDateFormat()
+      dateformat: this.getDateFormat(),
     };
+  },
+  computed:{
+      tablist(){
+          return _.map(['前端','后端','Linux'],x=>{
+              return {
+                  label: x,
+                  value: x
+              }
+          });
+      }
   },
   created() {
     setInterval(() => {
