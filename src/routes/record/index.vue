@@ -37,7 +37,7 @@ export default {
       dateformat: this.getDateFormat(),
       querylist: _.chain(rawTabListSource).mapKeys((x,d)=>d).mapValues(x=>({
         data: [],
-        count: 0,
+        count: 0
       })).value()
     };
   },
