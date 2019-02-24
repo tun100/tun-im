@@ -48,7 +48,6 @@ export default {
         ctn: 0
       }))
       .value();
-      debugger;
     return {
       dateformat: this.getDateFormat(),
       querylist
