@@ -15,7 +15,6 @@ var routes = _.chain(pathStrList).map(x=>{
     var basedir = patharr[1];
     var cptpath = x + '/index.vue';
     var cpt = ctx(cptpath).default;
-    console.log(cpt);
     return {
         component: cpt,
         name: basedir,
