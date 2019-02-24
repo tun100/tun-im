@@ -4,7 +4,7 @@
     <section class="hero is-dark">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">不断学习！记录下每刻学习历程</h1>
+          <h1 class="title">不断提升！记录下每刻学习历程</h1>
           <h2 class="subtitle">今天是{{dateformat}} 广州 晴</h2>
         </div>
       </div>
@@ -14,6 +14,7 @@
   </div>
 </template>
 <script>
+import moment from 'moment';
 export default {
     data(){
         return {
@@ -22,12 +23,12 @@ export default {
     },
     created(){
         setInterval(()=>{
-            this.dateformat = getDateFormat();
+            this.dateformat = this.getDateFormat();
         },1000);
     },
     methods: {
         getDateFormat(){
-            return moment().format("YYYY-MM-DD HH:mm:ss") ;
+            return moment().format("YYYY-MM-DD") ;
         }
     }
 };
