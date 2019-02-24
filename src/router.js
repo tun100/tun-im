@@ -21,7 +21,7 @@ var routes = _.chain(pathStrList).map(x=>{
         path: '/'+basedir
     }
 }).value();
-
+console.log(pathStrList);
 const router = new VueRouter({
  routes 
 });
