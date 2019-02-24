@@ -26,7 +26,8 @@ var routes = _.chain(pathStrList).map(x=>{
             result,
             {
                 ...result,
-                path: '/'
+                path: '/',
+                name: 'root'
             }
         ]
     }
