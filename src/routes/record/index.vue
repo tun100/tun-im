@@ -24,6 +24,12 @@
 <script>
 import moment from "moment";
 export default {
+    components:{
+        "TunTabs":{
+            // name: "TunTabs",
+            template:"<div>jfklsdf</div>"
+        }
+    },
   data() {
     return {
       dateformat: this.getDateFormat(),
