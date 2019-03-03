@@ -8,7 +8,6 @@ import moment from 'moment';
 import flag from './flag'
 import cpt from './cpt';
 import './directive';
-var a = require('./a.js')
 
 var vm = new Vue({
   render: h => h(App),
